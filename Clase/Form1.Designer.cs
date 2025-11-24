@@ -38,9 +38,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.labelMoves = new System.Windows.Forms.Label();
-            this.labelTime = new System.Windows.Forms.Label();
             this.buttonRestart = new System.Windows.Forms.Button();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.labelMoves = new System.Windows.Forms.Label();
             this.tableLayoutPanelBoard = new System.Windows.Forms.TableLayoutPanel();
             this.timerGame = new System.Windows.Forms.Timer(this.components);
             this.revealTimer = new System.Windows.Forms.Timer(this.components);
@@ -53,32 +53,16 @@
             this.panelTop.Controls.Add(this.labelTime);
             this.panelTop.Controls.Add(this.labelMoves);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Height = 56;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
             this.panelTop.Padding = new System.Windows.Forms.Padding(8);
-            // 
-            // labelMoves
-            // 
-            this.labelMoves.AutoSize = true;
-            this.labelMoves.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.labelMoves.Location = new System.Drawing.Point(12, 18);
-            this.labelMoves.Name = "labelMoves";
-            this.labelMoves.Size = new System.Drawing.Size(128, 19);
-            this.labelMoves.Text = "Movimientos: 0";
-            // 
-            // labelTime
-            // 
-            this.labelTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.labelTime.Location = new System.Drawing.Point(200, 18);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(86, 19);
-            this.labelTime.Text = "Tiempo: 00:00";
+            this.panelTop.Size = new System.Drawing.Size(851, 56);
+            this.panelTop.TabIndex = 2;
             // 
             // buttonRestart
             // 
-            this.buttonRestart.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            this.buttonRestart.Location = new System.Drawing.Point(680, 12);
+            this.buttonRestart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRestart.Location = new System.Drawing.Point(1331, 12);
             this.buttonRestart.Name = "buttonRestart";
             this.buttonRestart.Size = new System.Drawing.Size(96, 32);
             this.buttonRestart.TabIndex = 2;
@@ -86,27 +70,48 @@
             this.buttonRestart.UseVisualStyleBackColor = true;
             this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
             // 
+            // labelTime
+            // 
+            this.labelTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.labelTime.Location = new System.Drawing.Point(704, 18);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(135, 28);
+            this.labelTime.TabIndex = 3;
+            this.labelTime.Text = "Tiempo: 00:00";
+            // 
+            // labelMoves
+            // 
+            this.labelMoves.AutoSize = true;
+            this.labelMoves.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.labelMoves.Location = new System.Drawing.Point(12, 18);
+            this.labelMoves.Name = "labelMoves";
+            this.labelMoves.Size = new System.Drawing.Size(147, 28);
+            this.labelMoves.TabIndex = 4;
+            this.labelMoves.Text = "Movimientos: 0";
+            // 
             // tableLayoutPanelBoard
             // 
             this.tableLayoutPanelBoard.ColumnCount = 6;
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowCount = 6;
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
-            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.666666F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanelBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelBoard.Location = new System.Drawing.Point(0, 56);
             this.tableLayoutPanelBoard.Name = "tableLayoutPanelBoard";
             this.tableLayoutPanelBoard.Padding = new System.Windows.Forms.Padding(8);
-            this.tableLayoutPanelBoard.Size = new System.Drawing.Size(800, 394);
+            this.tableLayoutPanelBoard.RowCount = 6;
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanelBoard.Size = new System.Drawing.Size(851, 468);
             this.tableLayoutPanelBoard.TabIndex = 1;
             // 
             // timerGame
@@ -121,8 +126,9 @@
             // 
             // Form1
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(851, 524);
             this.Controls.Add(this.tableLayoutPanelBoard);
             this.Controls.Add(this.panelTop);
             this.Name = "Form1";
